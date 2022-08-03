@@ -17,7 +17,7 @@
 		<div class="container">
     		<div class="blurb">
         		<h1>Welcome to MeRIT!</h1>
-				<p>MERIT = Method Reporting with Initials for Transparency</a></p>
+				<p>MERIT = Method Reporting with Initials for Transparency</p>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
