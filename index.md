@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>MeRIT</title>
+		<title>
+			MeRIT
+		</title>
 	</head>
 	<body>
 		<nav>
