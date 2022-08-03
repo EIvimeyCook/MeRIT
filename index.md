@@ -11,7 +11,7 @@
         		<li><a href="/B&A">Before and After</a></li>
         		<li><a href="/People">People</a></li>
           <li><a href="/FAQ">FAQ</a></li>
-           <li><a href="/Contribute">Contirbute</a></li>
+           <li><a href="/Contribute">Contribute</a></li>
     		</ul>
 		</nav>
 		<div class="container">
