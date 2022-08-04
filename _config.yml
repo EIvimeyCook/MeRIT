@@ -1,3 +1,5 @@
 theme: minima
 title: MeRIT
 description: Method Reporting with Initials for Transparency
+header_pages:
+  - ACTG.md
