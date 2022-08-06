@@ -2,4 +2,7 @@ theme: minima
 title: MeRIT
 description: Method Reporting with Initials for Transparency
 header_pages:
+  - People.md
   - ACTG.md
+  - FAQ.md
+  - Contribute.md
