@@ -8,19 +8,24 @@ title: Homepage
 <br>
 <br>
 <br>
-<script src="https://cdn.jsdelivr.net/npm/before-after-slider@1.0.0/dist/slider.bundle.js"></script>
 
-<div id="mySlider"></div>
-
-<script>
-  new SliderBar({
-    el: '#mySlider',            // The container, required
-    beforeImg: 'Before.png',  // before image, required
-    afterImg: 'After.png',    // after image, required
-    width: "100%",          // slide-wrap height, default image-height
-    line: true,                 // Dividing line, default true
-    lineColor: "rgba(0,0,0,0.5)" // Dividing line color, default rgba(0,0,0,0.5)
+var grid_buttons = {
+    type: 'html-button-response',
+    stimulus: '',
+    choices: ['MeRIT'],
+    button_html: '<button onclick = "color()"><img id="change" src="%choice%-old.png"></button>',
+    prompt: 'Please click on a picture',
+    response_ends_trial: false,
+    trial_duration: 5000
+  }
+        
+  function color(){
+    document.getElementById('change').src = document.getElementById('change').src.replace("old","new");
+  };
+  
+  jsPsych.init({
+    timeline: [grid_buttons],
+    on_finish: function(){jsPsych.data.displayData();}
   });
-</script>
 
 
