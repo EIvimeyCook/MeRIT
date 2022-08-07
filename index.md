@@ -9,6 +9,7 @@ title: Homepage
 <br>
 <br>
 
+```html
   var grid_buttons = {
     type: 'html-button-response',
     stimulus: '',
@@ -26,4 +27,4 @@ title: Homepage
     var img_el = document.getElementById(img_id); 
     img_el.src = img_el.src.replace("old","new");
   };
-
+```
