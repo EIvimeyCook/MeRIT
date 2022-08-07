@@ -3,10 +3,25 @@ layout: home
 title: Homepage
 ---
 
-<button onclick="document.getElementById('myImage').src='MeRIT-old.png'">Old System</button>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-<img id="myImage" src="MeRIT-old.png" style="width:1000px">
+<link href="css/ba-slider.css" rel="stylesheet" />
+<script src="js/ba-slider.min.js"></script>
 
-<button onclick="document.getElementById('myImage2').src=''MeRIT-new.png'">New System</button>
+<div class="comparison-slider-wrapper">
+    <div id="ba-slider" class="comparison-slider">
+            <div class="overlay">text</div>
+            <img src="MeRIT-new.png"/>
+        <div class="resize">
+            <div class="overlay">text</div>
+            <img src="MeRIT-old.png"/>
+        </div>
+        <div class="divider"></div>
+    </div>
+</div>
 
-<img id="myImage2" src="MeRIT-new.png" style="width:1000px">
+<script>
+    $(document).ready(function () {
+        baSlider("#ba-slider");
+    });
+</script>
