@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "{{ minima }}";
+@import "{{ site.theme }}";
 
 .site-title::before {
 	content: url("/logo.png");
