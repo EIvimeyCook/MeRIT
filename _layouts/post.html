@@ -1,12 +1,31 @@
-<div class="col-lg-8 col-md-10 mx-auto">
-  <hr />
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<script src="https://utteranc.es/client.js"
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+    
+    <script src="https://utteranc.es/client.js"
         repo="EIvimeyCook / MeRIT"
         issue-term="title"
         theme="boxy-light"
         crossorigin="anonymous"
         async>
 </script>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
+
+
   
-  </div>
