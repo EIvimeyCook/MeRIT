@@ -8,3 +8,4 @@ header_pages:
   - Contribute.md
   avatar: "logo.png"
   round-avatar: true
+  title-img: "logo.png"
