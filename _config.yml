@@ -1,5 +1,7 @@
 theme: minima
-title: MeRIT ![](logo.png)
+title: MeRIT <img src="logo.png"
+     style="float: left; margin-right: 10px;" />
+     
 description: Method Reporting with Initials for Transparency
 header_pages:
   - People.md
