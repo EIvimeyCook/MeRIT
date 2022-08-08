@@ -11,12 +11,3 @@ How can you contribute to MeRIT community?
 
 If you're interested, please email [Merit.Help](merit.help@gmail.com)
 
-
-
-<script src="https://utteranc.es/client.js"
-        repo="EIvimeyCook / MeRIT"
-        issue-term="title"
-        theme="boxy-light"
-        crossorigin="anonymous"
-        async>
-</script>
