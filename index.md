@@ -2,4 +2,5 @@
 layout: home
 title: Homepage
 ---
-<iframe src = "https://edivimeycook.shinyapps.io/MeRIT-home/" style = "border:none; width:2000px; height:1000px;"></iframe
+
+Welcome to MeRIT (Method Reporting with Initials for Transparency)
