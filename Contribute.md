@@ -10,3 +10,13 @@ How can you contribute to MeRIT community?
 2. By helping to maintain and update the MeRIT website.
 
 If you're interested, please email merit.help@gmail.com
+
+
+
+<script src="https://utteranc.es/client.js"
+        repo="EIvimeyCook / MeRIT"
+        issue-term="title"
+        theme="boxy-light"
+        crossorigin="anonymous"
+        async>
+</script>
