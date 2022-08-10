@@ -3,6 +3,13 @@
 
 @import "minima";
 
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+$logo: #337AB6;
 
 #home-merit-logo {
   background-color:$logo;
