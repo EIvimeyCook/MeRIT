@@ -2,6 +2,7 @@
 layout: post
 ---
 
+<h3>Contribute</h3>
 
 How can you contribute to MeRIT community?
 
