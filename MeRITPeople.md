@@ -1,6 +1,6 @@
 ---
 layout: default
-title: People
+title: MeRIT People
 ---
 
 <h2>The MeRIT Team</h2>
