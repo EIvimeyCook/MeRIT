@@ -1,6 +1,5 @@
 ---
-layout: home
-title: Homepage
+layout: default
 ---
 
 Welcome to MeRIT (Method Reporting with Initials for Transparency)
