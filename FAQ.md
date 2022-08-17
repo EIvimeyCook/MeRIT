@@ -18,7 +18,7 @@ Many ways! Head on over to the [Contribute Page](https://eivimeycook.github.io/M
 
 Simple. Rather than using the traditional style of method writing, each part of the research, from running models to collecting data, is accompanied by an initial letting the reader know who performed such an action. Thus increasing transparency, granularity, accountability and allowing appropriate credit to be given.
 
-For an example - head over to the [CExample Page!](https://eivimeycook.github.io/MeRIT/Community_Examples.html).
+For an example - head over to the [Example Page!](https://eivimeycook.github.io/MeRIT/Community_Examples.html).
 
 <br>
 
