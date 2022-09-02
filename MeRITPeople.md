@@ -6,6 +6,7 @@ title: The Team
 <h2>The MeRIT Team</h2>
 
 | | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="800" src="Temp.png">  Shinichi Nakagawa | <img width="800" src="Temp.png">  Malgorzata Lagisz | <img width="800" src="Temp.png">  Ed Ivimey-Cook | 
 <img width="800" src="Temp.png">  Joel Pick | <img width="800" src="Temp.png">  Matt Grainger | <img width="800" src="Temp.png">  April Martinig |
 <img width="800" src="Temp.png">  Saras Windecker | <img width="800" src="Temp.png">  Matthieu Paquet | <img width="800" src="Temp.png">  Yefeng Yang |
