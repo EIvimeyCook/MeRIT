@@ -24,3 +24,8 @@ For an example - head over to the [Example Page!](https://eivimeycook.github.io/
 
 <h4>  3. What do you do when two (or more) people have the same initials? </h4>
 
+In this case you can spell out family names (e.g. PP = Patrice Pottier and Pietro Pollo would become PPottior and PPollo).
+
+
+
+
