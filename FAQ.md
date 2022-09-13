@@ -22,3 +22,5 @@ For an example - head over to the [Example Page!](https://eivimeycook.github.io/
 
 <br>
 
+<h4>  3. What do you do when two (or more) people have the same initials? </h4>
+
