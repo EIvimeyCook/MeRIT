@@ -26,6 +26,18 @@ For an example - head over to the [Example Page!](https://eivimeycook.github.io/
 
 In this case you can spell out family names (e.g. PP = Patrice Pottier and Pietro Pollo would become PPottior and PPollo).
 
+<br>
+
+<h4>  4. What do you do when you have many authors on one paper? </h4>
+
+<br>
+
+<h4>  5. How will this system work when there are restrictive word counts? </h4>
+
+<br>
+
+<h4>  5. How will this system work when there are restrictive word counts? </h4>
+
 
 
 
