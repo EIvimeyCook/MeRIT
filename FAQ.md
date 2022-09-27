@@ -34,9 +34,6 @@ In this case you can spell out family names (e.g. PP = Patrice Pottier and Pietr
 
 <h4>  5. How will this system work when there are restrictive word counts? </h4>
 
-<br>
-
-<h4>  5. How will this system work when there are restrictive word counts? </h4>
 
 
 
