@@ -10,6 +10,7 @@ title: The Team
 |<img width="800" src="Temp.png">  Shinichi Nakagawa | <img width="800" src="Temp.png">  Malgorzata Lagisz | <img width="800" src="Temp.png">  Ed Ivimey-Cook | 
 <img width="800" src="Temp.png">  Matt Grainger | <img width="800" src="Temp.png">  Rose O'Dea |
 
+<br> 
 
 <h2>The MeRIT Investigation Team</h2>
 
