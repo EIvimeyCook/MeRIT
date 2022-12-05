@@ -13,8 +13,6 @@ title: The Team
 
 <h2>The MeRIT Investigation Team</h2>
 
-<br>
-
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="800" src="Temp.png">  Joel Pick |  <img width="800" src="Temp.png">  April Martinig |<img width="800" src="Temp.png">  Saras Windecker | 
