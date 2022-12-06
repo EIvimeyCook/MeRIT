@@ -30,13 +30,29 @@ In this case you can spell out family names (e.g. PP = Patrice Pottier and Pietr
 
 <h4>  4. What do you do when you have many authors on one paper? </h4>
 
+In this circumstance you could create a group system where multiple authors are listed in the various large groups in which they particpated. 
+
+For instance, “L.R, H.W, P.P, K.M, C.W, L.M did this and that. S.N, P.P, K.M, C.W, L.M did this and that” becomes “Group 1 did this and that. Group 2 did this and that”. A list of authors included in the various groups might be included in the supplemental materials.
+
 <br>
 
 <h4>  5. How will this system work when there are restrictive word counts? </h4>
 
+It is our belief that this will not substantially alter the length of methods sections and in some journals, there is no limit on the word count for the methods section. However, if this is indeed an issue, then supplementary methods could be used to provide added granularity as to precise roles using the MeRIT system. 
+
 <br>
 
 <h4>  6. What do you do if you've supervised an action? </h4>
+
+As mentioned in the accompanying paper,for supervisory or advisory roles you can still use the MeRIT system, e.g., “REO conducted the statistical analysis with the support of JLP”.
+
+<br>
+
+<br>
+
+
+If you have any other questions feel free to suggest or ask them on the [Contribute Page](https://eivimeycook.github.io/MeRIT/Contribute.html)
+
 
 
 
