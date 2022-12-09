@@ -6,7 +6,7 @@ title: The Team
 <h2>The MeRIT Core Team</h2>
 
 | | | |
-|-------------------------|-------------------------|-------------------------|
+|::|-------------------------:|-------------------------:|
 | <img width="800" src="SN_Profile.jpg">  <a href="http://www.i-deel.org/">Shinichi Nakagawa</a> | <img width="800" src="ML_Profile.jpeg"> <a href="www.mlagisz.weebly.com">Malgorzata (Losia) Lagisz</a>  | <img width="800" src="EIC Profile.jpg">  <a href="https://eivimeycook.github.io/">Ed Ivimey-Cook</a> |
 | <img width="800" src="MG_Profile.JPG">  Matt Grainger | <img width="800" src="RO_Profile.png">  Rose O'Dea |
 
