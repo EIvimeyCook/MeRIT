@@ -7,7 +7,7 @@ title: The Team
 
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-| <img width="800" src="Temp.png">  Shinichi Nakagawa | <img width="800" src="ML_Profile.jpeg"> <a href="www.mlagisz.weebly.com">Malgorzata (Losia) Lagisz</a>  | <img width="800" src="EIC Profile.jpg">  <a href="https://eivimeycook.github.io/">Ed Ivimey-Cook</a> |
+| <img width="800" src="Temp.png">  Shinichi Nakagawa | <img width="800" height = "800 src="ML_Profile.jpeg"> <a href="www.mlagisz.weebly.com">Malgorzata (Losia) Lagisz</a>  | <img width="800" src="EIC Profile.jpg">  <a href="https://eivimeycook.github.io/">Ed Ivimey-Cook</a> |
 | <img width="800" src="Temp.png">  Matt Grainger | <img width="800" src="Temp.png">  Rose O'Dea |
 
 <br> 
