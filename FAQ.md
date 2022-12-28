@@ -44,7 +44,7 @@ It is our belief that this will not substantially alter the length of methods se
 
 <h4>  6. What do you do if you've supervised an action? </h4>
 
-As mentioned in the accompanying paper,for supervisory or advisory roles you can still use the MeRIT system, e.g., “REO conducted the statistical analysis with the support of JLP”.
+As mentioned in the accompanying paper, for supervisory or advisory roles you can still use the MeRIT system, e.g., “REO conducted the statistical analysis with the support of JLP”.
 
 <br>
 
