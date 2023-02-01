@@ -48,12 +48,33 @@ As mentioned in the accompanying paper, for supervisory or advisory roles you ca
 
 <br>
 
+<h4>  7. What do you do if a consortium is an author? </h4>
+
+Consortia can be treated in much the same way as a single author........
+
+<br>
+
+<h4>  8. What do you do if an author has a single names </h4>
+
+Authors with single names can be referred to by that name. For example, an author called Salman, might be listed as "Salman.". 
+
+<br>
+
+<h4>  9. What happens when the article type is not typical and has reporting of some methods outside of the main Methods section or split into the Supplementary Materials </h4>
+
+MeRIT allows identification of methodological roles throughout the article. This makes identifying the contributor to all methodological roles throughout the study.
+
+<br>
+
+<h4>  10. Would it cause confusion to readers for credit to be given to non-authors? </h4>
+
+Contributors who are not authors are often acknowledged in the Acknowledgements section of an article at present (but not always). Allowing non-authors to be acknowledged in the MeRIT system will enable all contributors to get credit for their work.
+
+
 <br>
 
 
 If you have any other questions feel free to suggest or ask them on the [Contribute Page](https://eivimeycook.github.io/MeRIT/Contribute.html)
-
-
 
 
 
