@@ -9,15 +9,16 @@ title: How to Cite!
 There are several ways to acknowledge the use of the MeRIT system in your paper.
 
 <br>
-
-<h5> In your methods </h5>
-
 Simply insert a statement saying, for instance: <br>
+
+<h3> In your methods </h3>
+<br>
+
 "We provide author initials as per the MeRIT system (Nakagawa et al 2023)". <br>
 or <br>
 "EIC conducted the fieldwork (note we use the MeRIT system as per Nakagawa et al. 2023)."
-
 <br>
-<h5> In your Acknowledgements </h5>
 
-Another option is to directly reference and cite Nakagawa et al 2023 and the MeRIT system in your ackowledgements section.
+<h3> In your Acknowledgements </h3>
+
+Another option is to directly reference and cite Nakagawa et al 2023 and the MeRIT system in your acknowledgements section.
