@@ -10,7 +10,8 @@ There are several ways to acknowledge the use of the MeRIT system in your paper.
 
 <br>
 Simply insert a statement saying, for instance: <br>
-
+<br>
+<br>
 <h3> In your methods </h3>
 <br>
 
