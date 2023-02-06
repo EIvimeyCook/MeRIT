@@ -18,6 +18,7 @@ Simply insert a statement saying, for instance: <br>
 or <br>
 "EIC conducted the fieldwork (note we use the MeRIT system as per Nakagawa et al. 2023)."
 <br>
+<br>
 
 <h3> In your Acknowledgements </h3>
 
