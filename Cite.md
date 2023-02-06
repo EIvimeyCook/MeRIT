@@ -6,8 +6,7 @@ title: How to Cite!
 
 <h2>How to Cite MeRIT</h2>
 
-There are several ways to acknowledge the use of the MeRIT system in your paper. The easiest way is to simply insert a statement saying, for instance: <br>
-<br>
+There are several ways and locations where you can acknowledge the use of the MeRIT system in your paper. For instance: <br>
 <br>
 <h3> In your Methods/Acknowledgements/Author Credit sections: </h3>
 <br>
