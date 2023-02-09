@@ -6,6 +6,7 @@ Method Reporting with Initials for Transparency
 
 Head over to the [MeRIT website](http://www.merit.help/) for more information.
 
+<br>
 
 <div id="merit-logo">
   <div style="text-align: center;">
