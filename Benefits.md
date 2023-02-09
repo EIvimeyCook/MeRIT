@@ -3,8 +3,8 @@ layout: default
 title: The Benefits
 ---
 
-<h2>The Benefits of MeRIT</h2>
-     <br>
+<h2>The Benefits of MeRIT</h2> <br>
+<br>
      
  <h3>Below you will see a diagram illustrating the relative benefits of MeRIT (Method Reporting with Initials for Transparency):</h3>
      
