@@ -5,7 +5,7 @@ title: How to Cite!
 
 
 <h2>How to Cite MeRIT</h2>
-
+<br>
 <h3><b>There are several ways and locations where you can acknowledge the use of the MeRIT system in your paper. For instance, in your Methods/Acknowledgements/Author Credit sections:</b></h3>
 <br>
 "We provide author initials as per the MeRIT system (Nakagawa et al 2023)". <br>
