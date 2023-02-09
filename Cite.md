@@ -10,6 +10,6 @@ There are several ways and locations where you can acknowledge the use of the Me
 <br>
 <br>
 "We provide author initials as per the MeRIT system (Nakagawa et al 2023)". <br>
-or <br>
+<i>or</i> <br>
 "EIC conducted the fieldwork (note we use the MeRIT system as per Nakagawa et al. 2023)."
 
