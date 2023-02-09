@@ -15,8 +15,6 @@ title: The Benefits
 <br>
 
 <h3>In addition, why not try this shiny App which interactively describes the above figure. </h3> <br>
-<br>
-<br>
 
   <p align="center">
 <iframe src = "https://edivimeycook.shinyapps.io/MeRIT_DNA/" style = "border:none; width:500px; height:1000px;"></iframe
