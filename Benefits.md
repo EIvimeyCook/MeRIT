@@ -9,7 +9,7 @@ title: The Benefits
       <br> 
       <br>
   <p align="center">
-      <img src="{{site.images_path | relative_url}}merit_fig2.png" alt="merit figure 1"
+      <img src="merit_fig2.png" alt="merit figure 2"
       width="800" 
      height="800"> 
 </p>
