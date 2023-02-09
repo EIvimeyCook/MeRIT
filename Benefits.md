@@ -4,7 +4,7 @@ title: The Benefits
 ---
 
 <p align="left">
-     h3<>Below you will see a diagram illustrating the realtive benefits of MeRIT (Method Reporting with Initials for Transparency): </h3>
+     <h3> Below you will see a diagram illustrating the relative benefits of MeRIT (Method Reporting with Initials for Transparency): </h3>
   </p>
       
   <p align="center">
