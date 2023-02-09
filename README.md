@@ -8,12 +8,8 @@ Head over to the [MeRIT website](http://www.merit.help/) for more information.
 
 <br>
 
-<div id="merit-logo">
-  <div style="text-align: center;">
-  <div class="wrapper">
+<p align="center">
     <img src="MeritLogo.png" alt="MeRIT"
-      width="200" 
-     height="200"> 
-  </div>
-</div>
-  </div>
+      width="400" 
+     height="400"> 
+</p>
