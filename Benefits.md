@@ -3,11 +3,9 @@ layout: default
 title: The Benefits
 ---
 
-<p align="left">
-     <h3> Below you will see a diagram illustrating the relative benefits of MeRIT (Method Reporting with Initials for Transparency): </h3>
-  </p> <br>
-  <br>
-      
+<h2>Below you will see a diagram illustrating the relative benefits of MeRIT (Method Reporting with Initials for Transparency): </h2>
+     <br>
+     
   <p align="center">
       <img src="merit_fig2.png" alt="merit figure 2"
       width="700" 
@@ -16,7 +14,7 @@ title: The Benefits
 <br>
 <br>
 
-In addition, why not try this shiny App which interactively describes the above figure....<br>
+<h3>In addition, why not try this shiny App which interactively describes the above figure. </h3> <br>
 <br>
 <br>
       
