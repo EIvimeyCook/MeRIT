@@ -6,8 +6,6 @@ title: FAQ
 
 <h2>FAQ</h2>
 
-<br>
-
 <h4> 1. How can I get involved? </h4>
 
 Many ways! Head on over to the [Contribute Page](https://eivimeycook.github.io/MeRIT/Contribute.html) for more information.
