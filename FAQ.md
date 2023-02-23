@@ -31,7 +31,7 @@ For individuals with the same first/last name, you could do one of two things. E
 
 <i>In this circumstance you could create a group system where multiple authors are listed in the various large groups in which they participated. </i>
 
-<i>For instance, “L.R, H.W, P.P, K.M, C.W, L.M did this and that. S.N, P.P, K.M, C.W, L.M did this and that” becomes “Group 1 did this and that. Group 2 did this and that”. A list of authors included in the various groups might be included in the supplemental materials. </i>
+<i>For instance, “L.R, H.W, P.P, K.M, C.W, L.M did this and that. S.N, P.P, K.M, C.W, L.M did this and that” becomes “Group 1 did this and that. Group 2 did this and that”. A list of authors included in the various groups colud then be included in the supplemental materials or at the start of the methods section. </i>
 
 <br>
 
