@@ -14,7 +14,7 @@ title: The Benefits
 <br>
 <br>
 
-<h3>In addition, why not try this interactive app which interactively describes the above figure. </h3> <br>
+<h3>In addition, why not try this interactive app which describes the above figure. </h3> <br>
 
   <p align="center">
 <iframe src = "https://edivimeycook.shinyapps.io/MeRIT_DNA/" style = "border:none; width:500px; height:1000px;"></iframe
