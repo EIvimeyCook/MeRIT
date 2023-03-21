@@ -15,5 +15,5 @@ title: How to Cite!
 <br>
 <h4>Full citation:</h4>
 
-Nakagawa, S. Ivimey-Cook, E. R., Grainger, M. J., O'Dea, R. E., Burke, S., Drobniak, S. M., Gould, E., Macartney, E. L., Martnig, A. R., Paquet, M., Morrison, K., Pick, J. L., Pottier, P., Ricolfi, L., Wilkinson, D. P., Willcox, A., Williams, C., Wilson, L. A. B., Windecker, S. M,, Yang, Y. &  Lagisz., M. "Method Reporting with Initials for Transparency (MeRIT) promotes more granularity and accountability for author contributions". Nature Communications (2023). DOI: [https://doi.org/10.1038/s41467-023-37039-1](https://doi.org/10.1038/s41467-023-37039-1)
+Nakagawa, S. Ivimey-Cook, E. R., Grainger, M. J., O'Dea, R. E., Burke, S., Drobniak, S. M., Gould, E., Macartney, E. L., Martinig, A. R., Morrison, K., Paquet, M., Pick, J. L., Pottier, P., Ricolfi, L., Wilkinson, D. P., Willcox, A., Williams, C., Wilson, L. A. B., Windecker, S. M,, Yang, Y. &  Lagisz., M. "Method Reporting with Initials for Transparency (MeRIT) promotes more granularity and accountability for author contributions". Nature Communications (2023). DOI: [https://doi.org/10.1038/s41467-023-37039-1](https://doi.org/10.1038/s41467-023-37039-1)
 
