@@ -73,7 +73,7 @@ For individuals with the same first/last name, you could do one of two things. E
 
 <h4>  11. How does MeRIT fit in with blinded reviews? </h4>
 
-<i> Good question! To maintain anonymity you could simply replace initials with temporary alternatives. For instance, EIC would become AA, SN would become AB etc. for the duration of peer review until acceptance. 
+<i> Good question! To maintain anonymity you could simply replace initials with temporary alternatives. For instance, EIC would become AA, SN would become AB... for the duration of peer review until acceptance and then these could be replaced with identifying initials. 
 
 
 <br>
