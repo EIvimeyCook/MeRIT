@@ -69,6 +69,12 @@ For individuals with the same first/last name, you could do one of two things. E
 
 <i>Contributors who are not authors are often acknowledged in the Acknowledgements section of an article at present (but not always). Allowing non-authors to be acknowledged in the MeRIT system will enable all contributors to get credit for their work. Regardless, as long as the non-author is clearly labelled and initialled, then we see no reason why this would not be possible.</i>
 
+<br>
+
+<h4>  11. How does MeRIT fit in with blinded reviews? </h4>
+
+<i> Good question! To maintain anonymity you could simply replace initials with temporary alternatives. For instance, EIC would become AA, SN would become AB etc. for the duration of peer review until acceptance. 
+
 
 <br>
 
