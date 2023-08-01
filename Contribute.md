@@ -9,5 +9,5 @@ title: Contribute to MeRIT
 2. By helping to maintain and update the MeRIT website.
 3. By contacting the email address below and notifying us of papers that have adopted the MeRIT system.
 
-If you're interested, please email [Merit.Help](merit.help.contact@gmail.com).
+If you're interested, please email merit.help.contact[at]gmail.com
 
