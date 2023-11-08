@@ -28,10 +28,36 @@ layout: default
     </div>
   </div>
 </div>
+<script>
+$(document).ready(function() {
+  var publicationId = '4062680227643435954';
+  var apiUrl = 'https://api.scholar.google.com/scholar?q=info:' + publicationId + ':scholar.google.com/&output=cite&scirp=0';
+
+  $.ajax({
+    url: apiUrl,
+    dataType: 'jsonp',
+    success: function(data) {
+      var citingPapersList = $('#citing-papers-list');
+
+      if (data.citations) {
+        data.citations.forEach(function(citation) {
+          citingPapersList.append('<li>' + citation + '</li>');
+        });
+      } else {
+        citingPapersList.append('<li>No citing papers found.</li>');
+      }
+    },
+    error: function() {
+      $('#citing-papers-list').append('<li>Error fetching citing papers.</li>');
+    }
+  });
+});
+</script>
+
     <br>
-<div>
-  <h3>List of published papers using the MeRIT system:</h3>
-  <script async src="https://scholar.google.com/scholar_bib.js?cites=4062680227643435954&as_sdt=2005&sciodt=0,5&hl=en"></script>
+<div id="citing-papers-container">
+  <h3>List of published papers that use the MeRIT system:</h3>
+  <ul id="citing-papers-list"></ul>
 </div>
     <br>
     <div style="text-align: left;">
@@ -62,5 +88,6 @@ layout: default
   </div>
 </div> 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
