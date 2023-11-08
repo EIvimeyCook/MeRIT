@@ -19,11 +19,19 @@ layout: default
       
       <h2>Welcome to MeRIT (Method Reporting with Initials for Transparency)</h2>
       <br>
-      Now published in <a href="https://doi.org/10.1038/s41467-023-37039-1">Nature Communications</a> <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s41467-023-37039-1"></div>
+      Now published in <a href="https://doi.org/10.1038/s41467-023-37039-1">Nature Communications:</a> 
+      <br>
+      <div class="ml-3">
+    {{ with $item.Params.doi }}
+    <div class="altmetric-embed" data-badge-type="donut" data-doi="10.1038/s41467-023-37039-1"></div>
+    <span class="__dimensions_badge_embed__" data-doi="{{ . }}" data-style="small_circle" data-hide-zero-citations="true" data-legend="hover-right"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script> {{ end }}
+  </div>
+      <br>
+      For papers that cite and use the MeRIT system see below: 
+      <br>
       <br>
       To see the MeRIT system in action, head over to <a href="http://www.merit.help/Community_Examples.html">Examples</a>.
       <br>
-      For papers that cite and use the MeRIT system see below: 
        <br>
   </div>
   </div>
