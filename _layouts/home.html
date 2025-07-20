@@ -30,86 +30,81 @@ layout: default
 </div>
 
 <div style="border:1px solid #000; padding:10px; margin:10px; font-family: Arial, sans-serif; text-align: left;">
-  <h3>List of papers that use the MeRIT system (using OpenAlex and Crossref):</h3>
+  <h3>List of papers that use the MeRIT system (listed on OpenAlex):</h3>
   <ol id="citation-list" style="margin-left: 1.2em; padding-left: 0;"></ol>
 </div>
 
 <script>
-  async function fetchCrossRefData(doi) {
-    const url = `https://api.crossref.org/works/${encodeURIComponent(doi)}`;
-    try {
-      const res = await fetch(url);
-      if (!res.ok) throw new Error("CrossRef fetch failed");
-      const data = await res.json();
-      return data.message;
-    } catch (e) {
-      console.warn(`Failed to fetch CrossRef data for DOI: ${doi}`, e);
-      return null;
-    }
+// Get detailed citation data from CrossRef using a DOI
+async function fetchCrossRefData(doi) {
+  const url = `https://api.crossref.org/works/${encodeURIComponent(doi)}`;
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("CrossRef fetch failed");
+    const data = await res.json();
+    return data.message;
+  } catch (e) {
+    console.warn(`Failed to fetch CrossRef data for DOI: ${doi}`, e);
+    return null;
   }
+}
 
-  function formatAuthors(authors) {
-    if (!authors || authors.length === 0) return "Unknown author";
-    return authors.map(a => {
-      const family = a.family || "";
-      const given = a.given || "";
-      const initials = given.split(" ").map(n => n[0].toUpperCase() + ".").join("");
-      return `${family} ${initials}`;
-    }).join(", ");
-  }
+// Format authors into AMA style: "Smith J, Doe A"
+function formatAuthors(authors) {
+  if (!authors || authors.length === 0) return "Unknown author";
+  return authors.map(a => {
+    const family = a.family || "";
+    const given = a.given || "";
+    const initials = given.split(" ").map(n => n[0]?.toUpperCase() + ".").join("");
+    return `${family} ${initials}`;
+  }).join(", ");
+}
 
-  function formatCitation(meta) {
-    const authors = formatAuthors(meta.author);
-    const title = meta.title ? meta.title[0] : "Untitled";
-    const journal = meta["container-title"] ? meta["container-title"][0] : "";
-    const year = meta.published && meta.published["date-parts"] ? meta.published["date-parts"][0][0] : "n.d.";
-    const volume = meta.volume || "";
-    const issue = meta.issue ? `(${meta.issue})` : "";
-    const pages = meta.page || "";
-    const doi = meta.DOI ? `https://doi.org/${meta.DOI}` : "";
+// Format the full citation as AMA-style HTML
+function formatCitation(meta) {
+  const authors = formatAuthors(meta.author);
+  const title = meta.title ? meta.title[0] : "Untitled";
+  const journal = meta["container-title"] ? meta["container-title"][0] : "";
+  const year = meta.published?.["date-parts"]?.[0]?.[0] || "n.d.";
+  const doi = meta.DOI ? `https://doi.org/${meta.DOI}` : "";
 
-    // AMA style
-    return `${authors}. <em>${title}</em>. ${journal ? journal + ". " : ""}${year};${volume}${issue}${pages ? ":" + pages : ""}. <a href="${doi}" target="_blank">${doi}</a>`;
-  }
+  return `${authors}. <em>${title}</em>. ${journal}. Published ${year}. <a href="${doi}" target="_blank">${doi}</a>`;
+}
 
-  async function loadCitations() {
-    const openalexId = "W4362523552";
-    const response = await fetch(`https://api.openalex.org/works?filter=cites:${openalexId}&per-page=50`);
-    const data = await response.json();
-    const list = document.getElementById('citation-list');
-    list.innerHTML = "";
+// Main function: load and display citations
+async function loadCitations() {
+  const openalexId = "W4362523552";
+  const response = await fetch(`https://api.openalex.org/works?filter=cites:${openalexId}&per-page=50`);
+  const data = await response.json();
 
-    if (data.results.length === 0) {
-      list.innerHTML = "<li>No citations found.</li>";
-      return;
-    }
+  const enriched = await Promise.all(data.results.map(async (work) => {
+    if (!work.doi) return null;
+    const meta = await fetchCrossRefData(work.doi);
+    return meta;
+  }));
 
-    for (let i = 0; i < data.results.length; i++) {
-      const work = data.results[i];
-      if (!work.doi) continue;
+  // Filter out nulls and sort by year DESC
+  const sorted = enriched
+    .filter(e => e !== null)
+    .sort((a, b) => {
+      const yearA = a.published?.["date-parts"]?.[0]?.[0] || 0;
+      const yearB = b.published?.["date-parts"]?.[0]?.[0] || 0;
+      return yearB - yearA; // Newest first
+    });
 
-      const crossRefMeta = await fetchCrossRefData(work.doi);
-      let citationHTML;
-      if (crossRefMeta) {
-        citationHTML = formatCitation(crossRefMeta);
-      } else {
-        const authors = work.authorships.map(a => a.author.display_name).join(", ");
-        const title = work.title || "Untitled";
-        const year = work.publication_year || "n.d.";
-        const doiLink = `https://doi.org/${work.doi}`;
-        citationHTML = `${authors}. <em>${title}</em>. Published ${year}. <a href="${doiLink}" target="_blank">${doiLink}</a>`;
-      }
+  const list = document.getElementById("citation-list");
+  list.innerHTML = "";
 
-      const li = document.createElement("li");
-      li.style.marginBottom = "1.5em"; // gap between citations
-      li.innerHTML = citationHTML;
-      list.appendChild(li);
-    }
-  }
+  sorted.forEach((meta, i) => {
+    const li = document.createElement("li");
+    li.style.marginBottom = "1.5em";
+    li.innerHTML = formatCitation(meta);
+    list.appendChild(li);
+  });
+}
 
-  loadCitations();
+loadCitations();
 </script>
-
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
