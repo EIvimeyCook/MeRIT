@@ -42,14 +42,15 @@ layout: default
     const list = document.getElementById('citation-list');
     list.innerHTML = "";
 
-    data.results.forEach(work => {
+    data.results.forEach((work, index) => {
       const title = work.title || "Untitled";
       const year = work.publication_year || "n.d.";
       const authors = work.authorships.map(a => a.author.display_name).join(", ");
       const doi = work.doi ? `https://doi.org/${work.doi}` : work.id;
 
       const li = document.createElement("li");
-      li.innerHTML = `<strong>${authors}</strong>. <em>${title}</em> (${year}). <a href="${doi}" target="_blank">DOI</a>`;
+      li.style.marginBottom = "1.5em"; // gap between citations
+      li.innerHTML = `<strong>${index + 1}.</strong> ${authors}. <em>${title}</em>. Published ${year}. <a href="${doi}" target="_blank">${doi}</a>`;
       list.appendChild(li);
     });
   }
