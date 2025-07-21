@@ -61,11 +61,10 @@ function formatAuthors(authors) {
 function formatCitation(meta) {
   const authors = formatAuthors(meta.author);
   const title = meta.title ? meta.title[0] : "Untitled";
-  const journal = meta["container-title"] ? meta["container-title"][0] : "";
   const year = meta.published?.["date-parts"]?.[0]?.[0] || "n.d.";
   const doi = meta.DOI ? `https://doi.org/${meta.DOI}` : "";
 
-  return `${authors}. <em>${title}</em>. ${journal}. ${year}. <a href="${doi}" target="_blank">${doi}</a>`;
+  return `${authors}. <em>${title}</em>. ${year}. <a href="${doi}" target="_blank">${doi}</a>`;
 }
 
 async function loadCitations() {
