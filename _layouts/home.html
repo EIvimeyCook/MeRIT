@@ -35,6 +35,7 @@ layout: default
 </div>
 
 <script>
+// Get detailed citation data from CrossRef using a DOI
 async function fetchCrossRefData(doi) {
   const url = `https://api.crossref.org/works/${encodeURIComponent(doi)}`;
   try {
@@ -47,7 +48,8 @@ async function fetchCrossRefData(doi) {
     return null;
   }
 }
-  
+
+// Format authors into AMA style: "Smith J, Doe A"
 function formatAuthors(authors) {
   if (!authors || authors.length === 0) return "Unknown author";
   return authors.map(a => {
@@ -58,6 +60,7 @@ function formatAuthors(authors) {
   }).join(", ");
 }
 
+// Format the full citation as AMA-style HTML
 function formatCitation(meta) {
   const authors = formatAuthors(meta.author);
   const title = meta.title ? meta.title[0] : "Untitled";
@@ -65,9 +68,10 @@ function formatCitation(meta) {
   const year = meta.published?.["date-parts"]?.[0]?.[0] || "n.d.";
   const doi = meta.DOI ? `https://doi.org/${meta.DOI}` : "";
 
-  return `${authors}. <em>${title}</em>. ${journal}. Published ${year}. <a href="${doi}" target="_blank">${doi}</a>`;
+  return `${authors}. <em>${title}</em>. ${journal}. ${year}. <a href="${doi}" target="_blank">${doi}</a>`;
 }
 
+// Main function: load and display citations
 async function loadCitations() {
   const openalexId = "W4362523552";
   const response = await fetch(`https://api.openalex.org/works?filter=cites:${openalexId}&per-page=100`);
@@ -79,12 +83,13 @@ async function loadCitations() {
     return meta;
   }));
 
+  // Filter out nulls and sort by year DESC
   const sorted = enriched
     .filter(e => e !== null)
     .sort((a, b) => {
       const yearA = a.published?.["date-parts"]?.[0]?.[0] || 0;
       const yearB = b.published?.["date-parts"]?.[0]?.[0] || 0;
-      return yearB - yearA; 
+      return yearB - yearA; // Newest first
     });
 
   const list = document.getElementById("citation-list");
@@ -100,6 +105,7 @@ async function loadCitations() {
 
 loadCitations();
 </script>
+
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
