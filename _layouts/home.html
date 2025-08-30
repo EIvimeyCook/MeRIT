@@ -30,8 +30,11 @@ layout: default
 </div>
 
 <div style="border:1px solid #000; padding:10px; margin:10px; font-family: Arial, sans-serif; text-align: left;">
-  <h3>List of papers that use the MeRIT system (listed on OpenAlex; please wait while the list loads):</h3>
-  <ol id="citation-list" style="margin-left: 1.2em; padding-left: 0;"></ol>
+  <h3>List of papers that use the MeRIT system (sourced from OpenAlex:</h3>
+  <p id="citation-count" style="font-style: italic; margin: 0 0 10px 0;">Loading citations…</p>
+  <ol id="citation-list" style="margin-left: 1.2em; padding-left: 0;">
+    <li>Loading citations…</li>
+  </ol>
 </div>
 
 <script>
@@ -71,56 +74,66 @@ async function loadCitations() {
   let cursor = "*";
   let allResults = [];
 
-  // fetch all citing works
-  while (cursor) {
-    const url = `https://api.openalex.org/works?filter=cites:${openalexId}&per-page=100&cursor=${cursor}`;
-    const response = await fetch(url);
-    const data = await response.json();
+  const list = document.getElementById("citation-list");
+  const countEl = document.getElementById("citation-count");
 
-    allResults = allResults.concat(data.results);
-    cursor = data.meta.next_cursor || null;
-  }
+  try {
+    // fetch all citing works
+    while (cursor) {
+      const url = `https://api.openalex.org/works?filter=cites:${openalexId}&per-page=100&cursor=${cursor}`;
+      const response = await fetch(url);
+      const data = await response.json();
 
-  // enrich with CrossRef if possible, otherwise use OpenAlex
-  const enriched = await Promise.all(allResults.map(async (work) => {
-    if (work.doi) {
-      const meta = await fetchCrossRefData(work.doi);
-      if (meta) return meta;
+      allResults = allResults.concat(data.results);
+      cursor = data.meta.next_cursor || null;
     }
-    // fallback: build from OpenAlex
-    return {
-      author: work.authorships?.map(a => {
-        const parts = a.author?.display_name?.split(" ") || [];
-        return {
-          family: parts.slice(-1)[0],
-          given: parts.slice(0, -1).join(" ")
-        };
-      }),
-      title: [work.display_name],
-      published: { "date-parts": [[work.publication_year]] },
-      DOI: work.doi || ""
-    };
-  }));
 
-  // sort newest first
-  const sorted = enriched
-    .filter(e => e !== null)
-    .sort((a, b) => {
-      const yearA = a.published?.["date-parts"]?.[0]?.[0] || 0;
-      const yearB = b.published?.["date-parts"]?.[0]?.[0] || 0;
-      return yearB - yearA;
+    // enrich with CrossRef if possible, otherwise use OpenAlex
+    const enriched = await Promise.all(allResults.map(async (work) => {
+      if (work.doi) {
+        const meta = await fetchCrossRefData(work.doi);
+        if (meta) return meta;
+      }
+      // fallback: build from OpenAlex
+      return {
+        author: work.authorships?.map(a => {
+          const parts = a.author?.display_name?.split(" ") || [];
+          return {
+            family: parts.slice(-1)[0],
+            given: parts.slice(0, -1).join(" ")
+          };
+        }),
+        title: [work.display_name],
+        published: { "date-parts": [[work.publication_year]] },
+        DOI: work.doi || ""
+      };
+    }));
+
+    // sort newest first
+    const sorted = enriched
+      .filter(e => e !== null)
+      .sort((a, b) => {
+        const yearA = a.published?.["date-parts"]?.[0]?.[0] || 0;
+        const yearB = b.published?.["date-parts"]?.[0]?.[0] || 0;
+        return yearB - yearA;
+      });
+
+    // render
+    list.innerHTML = "";
+    countEl.textContent = `${sorted.length} citations found`;
+
+    sorted.forEach((meta) => {
+      const li = document.createElement("li");
+      li.style.marginBottom = "1.5em";
+      li.innerHTML = formatCitation(meta);
+      list.appendChild(li);
     });
 
-  // render
-  const list = document.getElementById("citation-list");
-  list.innerHTML = "";
-
-  sorted.forEach((meta) => {
-    const li = document.createElement("li");
-    li.style.marginBottom = "1.5em";
-    li.innerHTML = formatCitation(meta);
-    list.appendChild(li);
-  });
+  } catch (err) {
+    console.error("Error loading citations:", err);
+    countEl.textContent = "Failed to load citations.";
+    list.innerHTML = "";
+  }
 }
 
 loadCitations();
