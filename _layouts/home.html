@@ -63,30 +63,46 @@ function formatCitation(meta) {
   const title = meta.title ? meta.title[0] : "Untitled";
   const year = meta.published?.["date-parts"]?.[0]?.[0] || "n.d.";
   const doi = meta.DOI ? `https://doi.org/${meta.DOI}` : "";
-  return `${authors}. <em>${title}</em>. ${year}. <a href="${doi}" target="_blank">${doi}</a>`;
+  return `${authors}. <em>${title}</em>. ${year}. ${doi ? `<a href="${doi}" target="_blank">${doi}</a>` : ""}`;
 }
 
 async function loadCitations() {
   const openalexId = "W4362523552";
-  let cursor = "*"; // start cursor
+  let cursor = "*";
   let allResults = [];
 
+  // fetch all citing works
   while (cursor) {
     const url = `https://api.openalex.org/works?filter=cites:${openalexId}&per-page=100&cursor=${cursor}`;
     const response = await fetch(url);
     const data = await response.json();
 
     allResults = allResults.concat(data.results);
-
     cursor = data.meta.next_cursor || null;
   }
 
-  // enrich with CrossRef
+  // enrich with CrossRef if possible, otherwise use OpenAlex
   const enriched = await Promise.all(allResults.map(async (work) => {
-    if (!work.doi) return null;
-    return await fetchCrossRefData(work.doi);
+    if (work.doi) {
+      const meta = await fetchCrossRefData(work.doi);
+      if (meta) return meta;
+    }
+    // fallback: build from OpenAlex
+    return {
+      author: work.authorships?.map(a => {
+        const parts = a.author?.display_name?.split(" ") || [];
+        return {
+          family: parts.slice(-1)[0],
+          given: parts.slice(0, -1).join(" ")
+        };
+      }),
+      title: [work.display_name],
+      published: { "date-parts": [[work.publication_year]] },
+      DOI: work.doi || ""
+    };
   }));
 
+  // sort newest first
   const sorted = enriched
     .filter(e => e !== null)
     .sort((a, b) => {
@@ -95,6 +111,7 @@ async function loadCitations() {
       return yearB - yearA;
     });
 
+  // render
   const list = document.getElementById("citation-list");
   list.innerHTML = "";
 
@@ -108,6 +125,7 @@ async function loadCitations() {
 
 loadCitations();
 </script>
+
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
