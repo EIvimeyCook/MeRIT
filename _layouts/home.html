@@ -104,18 +104,22 @@ async function loadCitations() {
           };
         }),
         title: [work.display_name],
-        published: { "date-parts": [[work.publication_year]] },
+        published: { "date-parts": [[work.publication_year, work.publication_month || 0, work.publication_day || 0]] },
         DOI: work.doi || ""
       };
     }));
 
-    // sort newest first
+    // sort by full date, newest first
     const sorted = enriched
       .filter(e => e !== null)
       .sort((a, b) => {
-        const yearA = a.published?.["date-parts"]?.[0]?.[0] || 0;
-        const yearB = b.published?.["date-parts"]?.[0]?.[0] || 0;
-        return yearB - yearA;
+        const dateA = a.published?.["date-parts"]?.[0] || [0];
+        const dateB = b.published?.["date-parts"]?.[0] || [0];
+
+        const numA = (dateA[0] || 0) * 10000 + (dateA[1] || 0) * 100 + (dateA[2] || 0);
+        const numB = (dateB[0] || 0) * 10000 + (dateB[1] || 0) * 100 + (dateB[2] || 0);
+
+        return numB - numA;
       });
 
     // render
@@ -138,7 +142,6 @@ async function loadCitations() {
 
 loadCitations();
 </script>
-
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
