@@ -107,6 +107,9 @@ Credit sections you could simply write:
 > granularity and accountability for author contributions. *Nature
 > Communications*, 14, 1788. <https://doi.org/10.1038/s41467-023-37039-1>
 
+A machine-readable [`CITATION.cff`](CITATION.cff) is included, so GitHub's
+"Cite this repository" button gives formatted APA and BibTeX
+
 ## Related work
 
 - [**TADA**](https://github.com/EIvimeyCook/TADA) — guidelines for improving
@@ -115,3 +118,7 @@ Credit sections you could simply write:
   control checklist
 - [**SORTEE**](https://www.sortee.org/) — Society for Open, Reliable, and
   Transparent Ecology and Evolutionary Biology
+
+## License
+
+Website content is licensed under [CC BY 4.0](LICENSE.md).
