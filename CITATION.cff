@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use the MeRIT system, please cite the publication below."
+type: software
+authors:
+  - family-names: "Nakagawa"
+    given-names: "Shinichi"
+    orcid: "https://orcid.org/0000-0002-7765-5182"
+  - family-names: "Ivimey-Cook"
+    given-names: "Edward R."
+    orcid: "https://orcid.org/0000-0003-4910-0443"
+  - family-names: "Lagisz"
+    given-names: "Malgorzata"
+title: "MeRIT: Method Reporting with Initials for Transparency"
+abstract: "Website and community resources for MeRIT, a system for reporting author contributions by placing author initials directly in the Methods section."
+url: "https://www.merit.help/"
+repository-code: "https://github.com/EIvimeyCook/MeRIT"
+license: CC-BY-4.0
+keywords:
+  - "author contributions"
+  - "CRediT"
+  - "research transparency"
+  - "open science"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Nakagawa"
+      given-names: "Shinichi"
+    - family-names: "Ivimey-Cook"
+      given-names: "Edward R."
+    - family-names: "Grainger"
+      given-names: "Matthew J."
+  title: "Method Reporting with Initials for Transparency (MeRIT) promotes more granularity and accountability for author contributions"
+  journal: "Nature Communications"
+  year: 2023
+  volume: 14
+  start: 1788
+  doi: 10.1038/s41467-023-37039-1
+  notes: "Full author list of 21; see the publication record."
