@@ -8,9 +8,11 @@
 </div>
 
 <!-- badges: start -->
-[![Website](https://img.shields.io/badge/website-merit.help-brightgreen)](http://www.merit.help/)
 [![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs41467--023--37039--1-blue)](https://doi.org/10.1038/s41467-023-37039-1)
+[![Website](https://img.shields.io/badge/website-merit.help-brightgreen)](http://www.merit.help/)
+[![Content: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-green)](LICENSE.md)
 <!-- badges: end -->
+
 
 Welcome to MeRIT! Head over to the [MeRIT website](http://www.merit.help/) for
 more information.
