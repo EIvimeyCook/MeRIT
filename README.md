@@ -70,20 +70,6 @@ MeRIT/
 └── merit_fig1.png, merit_fig2.png
 ```
 
-## Contributing
-
-Contributions are welcome, and the most useful ones are not code:
-
-- **Add your paper.** If you have used MeRIT in a publication, add it to
-  `Community_Examples.md`. Real examples are the most persuasive argument the
-  site has.
-- **Improve the FAQ.** If you hit an objection MeRIT does not yet answer — from a
-  co-author, an editor, or a reviewer — that question belongs in `FAQ.md`.
-- **Fix the site.** Typos, broken links, and layout issues via issue or pull
-  request.
-
-See [Contribute.md](Contribute.md) for more. To build locally:
-
 ## How to cite MeRIT
 
 There are several methods by which you can acknowledge the use of the MeRIT
