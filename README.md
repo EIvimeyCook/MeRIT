@@ -83,7 +83,16 @@ Credit sections you could simply write:
 > "EIC conducted the fieldwork (note we use the MeRIT system as per Nakagawa et
 > al. 2023)."
 
-**Full citation:**
+## Related work
+
+- [**TADA**](https://github.com/EIvimeyCook/TADA) — guidelines for improving
+  analytical code sharing
+- [**DCQC**](https://github.com/EIvimeyCook/DCQC) — SORTEE data and code quality
+  control checklist
+- [**SORTEE**](https://www.sortee.org/) — Society for Open, Reliable, and
+  Transparent Ecology and Evolutionary Biology
+
+##Citation##
 
 > Nakagawa, S., Ivimey-Cook, E. R., Grainger, M. J., O'Dea, R. E., Burke, S.,
 > Drobniak, S. M., Gould, E., Macartney, E. L., Martinig, A. R., Morrison, K.,
@@ -94,16 +103,12 @@ Credit sections you could simply write:
 > Communications*, 14, 1788. <https://doi.org/10.1038/s41467-023-37039-1>
 
 A machine-readable [`CITATION.cff`](CITATION.cff) is included, so GitHub's
-"Cite this repository" button gives formatted APA and BibTeX
+"Cite this repository" button gives formatted APA and BibTeX.
 
-## Related work
+## Contact
 
-- [**TADA**](https://github.com/EIvimeyCook/TADA) — guidelines for improving
-  analytical code sharing
-- [**DCQC**](https://github.com/EIvimeyCook/DCQC) — SORTEE data and code quality
-  control checklist
-- [**SORTEE**](https://www.sortee.org/) — Society for Open, Reliable, and
-  Transparent Ecology and Evolutionary Biology
+Edward R. Ivimey-Cook — <e.ivimeycook@gmail.com> —
+[ORCID 0000-0003-4910-0443](https://orcid.org/0000-0003-4910-0443)
 
 ## License
 
