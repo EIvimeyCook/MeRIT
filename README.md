@@ -92,7 +92,7 @@ Credit sections you could simply write:
 - [**SORTEE**](https://www.sortee.org/) — Society for Open, Reliable, and
   Transparent Ecology and Evolutionary Biology
 
-##Citation##
+## Citation
 
 > Nakagawa, S., Ivimey-Cook, E. R., Grainger, M. J., O'Dea, R. E., Burke, S.,
 > Drobniak, S. M., Gould, E., Macartney, E. L., Martinig, A. R., Morrison, K.,
